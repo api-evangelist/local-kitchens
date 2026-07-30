@@ -1,8 +1,26 @@
 aid: local-kitchens
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/local-kitchens.png
 name: Local Kitchens
-description: Local Kitchens is a company surfaced as a portfolio company of general-catalyst and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Local Kitchens is a restaurant company that operates multi-brand "food
+  hall" locations where a single kitchen prepares menu items from a curated set of
+  local and national restaurant brands for on-demand pickup and delivery, ordered
+  through its consumer website and mobile app. Surfaced as a portfolio company of
+  General Catalyst and added to the API Evangelist network for enrichment, it is a
+  consumer-facing hospitality and food-ordering business. As of this pass it does
+  not publish a public developer API, developer portal, or API documentation — its
+  web presence is a Cloudflare-fronted marketing and ordering site (Google Workspace
+  email, Klaviyo, Twilio, Zoom in its DNS records).
 url: https://raw.githubusercontent.com/api-evangelist/local-kitchens/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,26 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Restaurants
+- Food & Beverage
+- Food Delivery
+- Hospitality
+- Consumer
+- Online Ordering
+common:
+- type: DomainSecurity
+  url: security/local-kitchens-domain-security.yml
+- type: Website
+  url: https://localkitchens.com
 apis: []
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
